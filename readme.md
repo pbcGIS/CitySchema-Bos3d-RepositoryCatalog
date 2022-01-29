@@ -10,7 +10,7 @@ This Repository Catalog addresses each of the requirements for the International
 
 Deep down, the Repository / Catalog is a simple collection of HTML and data files.  These files link to each-other using relative path references, so that the entire repository catalog can be published on the web by simply dropping it into a web-accessible folder.  The repository catalog does not require any server-side processing, so that it renders exactly the same on an ordinary local file-system.  
 
-This gitHub repository is does not include all of the data-files -- which would be too large to share via gitHub.  This repository can be cloned or downloaded to your file-system for making changes.    Thropught the magic of GitHub, youcan also explore the files here or render this very same collection of files in your browser.  For example uou might want to visit these pages:
+This gitHub repository is does not include all of the data-files -- which would be too large to share via gitHub.  Only the files for tile I-3 are included todemonstrate the links to that tile's resources, including downloads for individual building models.    This repository can be cloned or downloaded to your file-system for making changes.    Through the magic of GitHub, youcan also explore the files here or render this very same collection of files in your browser.  For example uou might want to visit these pages:
 
 ## Explore This Repository as a Web Site!
 
