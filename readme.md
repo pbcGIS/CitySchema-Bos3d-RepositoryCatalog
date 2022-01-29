@@ -17,7 +17,7 @@ This gitHub repository is does not include all of the data-files -- which would 
 Right-click these links to open in a new tab so that this window can stay in Git-hub.
 
 * View the [Tiled Download Page](https://pbcgis.github.io/CitySchema-Bos3d-RepositoryCatalog/catalog/index.htm).  Click on tile I3 to try out how users can download assets, including individual building models. 
-* Take a look at the [index to documentation](https://pbcgis.github.io/CitySchema-Bos3d-RepositoryCatalog/catalog/index.htm), which should be sufficient to explain how the city model is put together and how it can be used to coordinate activities across diverse tools and territories. 
+* Take a look at the [index to documentation](https://pbcgis.github.io/CitySchema-Bos3d-RepositoryCatalog/catalog/doc_index.htm), which should be sufficient to explain how the city model is put together and how it can be used to coordinate activities across diverse tools and territories. 
 * [Administration Guide](https://pbcgis.github.io/CitySchema-Bos3d-RepositoryCatalog/catalog/admin_readme.htm) describes the structure of the self-contained collection of HTML and CSS files that renders itself as the complete model repository catalog.
 * [Style Guide and Page Template](https://pbcgis.github.io/CitySchema-Bos3d-RepositoryCatalog/catalog/template.htm) A page that concisely demonstrates the styling p0ssibilities afforded by the BOS3D.css stylesheet.  
 
