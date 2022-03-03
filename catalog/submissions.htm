@@ -27,7 +27,7 @@
 
 
 <h2>Very Simple Model Content Standard </h2>
-<p>Building and Bridge models in the BPDA's city model collection are managed in a geographical database that treats models as singular objects associated with attributes. In this context, models do not have any subdivisions such as Layers or nested groups.  This makes the model collection simple to manage without much need for a detailed specification or normalization of model organization.  Building models are mesh objects representing the exterior shell of the building.  
+<p>Building and Bridge models in the BPDA's city model collection are managed in a geographical database that treats models as singular objects associated with attributes. In this context, models do not have any subdivisions such as Layers or nested groups.  This makes the model collection simple to manage without much need for a detailed specification or normalization of model organization.  Building models are traingulated mesh objects representing the exterior shell of the building.  
 
 <h2>Model Level of Detail</h2> 
 <p>Here are some additional guidelines for model geometry level of detail:
@@ -42,14 +42,13 @@
 <li>If your building is attached to other buildings, it would be helpful to have separate models for the attached buildings. 
 <li>If your project has involved making improvements to themodels of other buildings in the neighborhood, it would be great to have those, too!
 </ul>
-<h2>Simple Wavefront Object Format</h2>
-<p>We have found that various 3D model formats allow geometry types that do not translate well when we import them into our GIS-Based management scheme. This is why we prefer that models be submitted as the simplest possible triangulated mesh in Wavefront Object format. 
-<p>
-Our model asset management system treats OBJ format as a primary asset which are leveraged to various proxy formats, including GLTF, ESRI Multipatch and SketchUp.  Each of these translations has potential for difficulty and corruption to creep in.  Therefore we prefer that designers use their modeling tool to produce a simplified view of their building shells that can be exported as a simple triangulated mesh. </p>
+<h2>Wavefront Object Format</h2>
+<p>Use your modeling tool to export a Wavefront Object (.OBJ) format model with the following properties:
 <ul>
 <li>Triangulate all faces (no parametric curves please)
-<li>Orient axes: Z Up, Y Forward.
-<li>Please do not use single faces that would have both sides exposed.  Many tools wil represent these as invisible from one side or the other. Even if your software has an option for exportng "Two-Sided Faces"
+<li>Model axis orientation: Z Up, Y Forward.
+<li>All faces should have a plain white material that is flat-shaded.  Export materials withthe model.  This will create a .MTL file that accompanies the .OBJ model file.
+<li>Do not include faces that have both sides exposed.  Expect all faces to be invisible when viewd from the wrong side. 
 <li>If your model uses materials and or textures, we would be happy to have these, although at this time, our workflow has to remove these.  We will keep your textured model in the archive.  
 </ul>
 
@@ -59,13 +58,15 @@ Our model asset management system treats OBJ format as a primary asset which are
 </figure>
 
 <h2>Context and Geo-Location</h2>
-<p>We need some means of verifying the placement of your model in the context of our existing city model.  This is tricky, since most modeling tools have trouble with geometry in very expansive coordinate systems that are used in state and local agencies.  The BPDA has developed a tiling and coordinate referencing scheme that bridges between design tools and GIS.  In short, keeping our tile frame in your model permits you to have your origin wherever works best in your project, but to re-register your model exports back and forth with the collaborative city model coordinate system. </p>
-    You can read all about it on our <a href="./tile_grid.htm#coordinates" target = "_new">Tile Grid and Coordinate System</a> page.  
-    <ul>
-        <li> if it is possible for you to submit your model using our Metro Boston 3D coordinate referencing system, that would be preferred.  If you have difficulties doing this, we would like to hear more about that. 
-        <li>We know that you wil be working in a project-based coordinate system.  If shifting back to the Metro 3D Boston coordinate system is too much to ask, it could be very helpful to include the tile boundary in your model -- which would give us a dependable registration.   
-        <li>If possible, include a ground-plan with a draped image texture as shown in the illustration above. The groundplan should show enough of the edge of pavement in the context area to verify that the model is registered correctly.  
-    </ul>
+<p>The BPDA has developed a tiling and coordinate referencing scheme that bridges between design tools and GIS.  The BPDA uses this coordinate frame for exporting its detailed base models that will be convenient for situating your model.
+The <a href="./tile_grid.htm#coordinates" target = "_new">Tile Grid and Coordinate System</a> page provides the tile referencing grid in many popular 3D formats.   
+<ul>
+<p>Watch the <a href="https://www.youtube.com/watch?v=IeyYV5W5u94&t=86s" target="outboard">video demonstration of using the metro3D tile grid</a> to coordinate exchange of models between the BPDA's model collection and your project models.  This technique allows you to keep whatever local site origin you might be using.  
+</ul>
+<h3>Preferred:</h3> 
+<p>If it is possible for you to submit your model using our Metro Boston 3D coordinate referencing system, that would be preferred.  
+<h3>Fallback</h3>
+<p>If it is not possible to export your model using the metro-3D coordinate system, please include a ground-plan reference image as shown in the illustration above. The groundplan should show enough of the edge of pavement in the context area to verify that the model is registered correctly.  
 
 <h2>Optional Source Material</h2>
 <p>Our archival system is capable of storing source material, including the plans and elevations and other information that may be part of the project proposal.  We can also keep working models -- for example SketchUp or .3DS files.  We are Sketchuip Users, so if you have a SketchUp file of your model this may be helpful in case we need to do any trouble-shooting.
